@@ -6,9 +6,9 @@
 .sel-trigger:not(.select) { padding: 0; border: 0; background: none }
 .sel-trigger:disabled { cursor: not-allowed; opacity: .55 }
 .sel-value { flex: 1; min-width: 0; overflow: hidden; text-overflow: ellipsis; white-space: nowrap }
-.sel-chevron { flex: none; width: 18px; height: 18px; fill: none; stroke: #0c6f67; stroke-width: 2.2; stroke-linecap: round; stroke-linejoin: round; transition: transform .35s cubic-bezier(.22, 1, .36, 1) }
+.sel-chevron { flex: none; width: 18px; height: 18px; fill: none; stroke: #742067; stroke-width: 2.2; stroke-linecap: round; stroke-linejoin: round; transition: transform .35s cubic-bezier(.22, 1, .36, 1) }
 .sel.is-open .sel-chevron { transform: rotate(180deg) }
-.sel-trigger:focus-visible { outline: 2px solid #3fd3c1; outline-offset: 4px; border-radius: 10px }
+.sel-trigger:focus-visible { outline: 2px solid #be3ea9; outline-offset: 4px; border-radius: 10px }
 
 /* Lista desplegable */
 .sel-list { position: fixed; inset: auto; z-index: 1000; display: none; margin: 0; min-width: 0; max-height: 340px; padding: 6px; overflow-y: auto; overscroll-behavior: contain; border: 1px solid rgba(27, 21, 17, .1); border-radius: 18px; background: #fffdf8; color: #1b1511; box-shadow: 0 34px 70px -24px rgba(27, 21, 17, .5), 0 4px 12px rgba(27, 21, 17, .06); font-family: "DM Sans", system-ui, -apple-system, "Segoe UI", sans-serif; font-size: 15px; font-weight: 500; letter-spacing: 0; text-transform: none; text-align: left; outline: none; scrollbar-width: thin; scrollbar-color: rgba(27, 21, 17, .2) transparent }
@@ -20,18 +20,18 @@
 .sel-option { display: flex; align-items: center; gap: 12px; min-height: 44px; padding: 9px 12px; border-radius: 12px; cursor: pointer; user-select: none; transition: background .15s ease, color .15s ease }
 .sel-option > span { flex: 1; min-width: 0 }
 .sel-option.is-active { background: #f3e8d6 }
-.sel-option[aria-selected="true"] { color: #0c6f67; font-weight: 700 }
+.sel-option[aria-selected="true"] { color: #742067; font-weight: 700 }
 .sel-option[aria-disabled="true"] { opacity: .4; cursor: not-allowed }
 .sel-check { flex: none; width: 18px; height: 18px; fill: none; stroke: currentColor; stroke-width: 2.4; stroke-linecap: round; stroke-linejoin: round; opacity: 0; transform: scale(.6); transition: opacity .2s ease, transform .25s ease }
 .sel-option[aria-selected="true"] .sel-check { opacity: 1; transform: none }
 .sel-thumb { flex: none; width: 38px; height: 38px; border-radius: 12px; background: #e2cfae center / cover no-repeat; box-shadow: inset 0 0 0 1px rgba(27, 21, 17, .08) }
-.sel-thumb-all { background: radial-gradient(circle at 30% 30%, #ffe2a1, #eab562 45%, #0e7a71 100%) }
+.sel-thumb-all { background: radial-gradient(circle at 30% 30%, #ffe2a1, #eab562 45%, #742067 100%) }
 .sel-rich .sel-option { min-height: 54px; padding: 8px 12px 8px 8px }
 
 /* Variante oscura (cabecera y paneles nocturnos) */
 .sel-dark { border-color: rgba(251, 246, 238, .12); background: rgba(21, 17, 14, .97); color: #fbf6ee; box-shadow: 0 34px 70px -24px rgba(0, 0, 0, .8); backdrop-filter: blur(16px); -webkit-backdrop-filter: blur(16px); scrollbar-color: rgba(251, 246, 238, .25) transparent }
 .sel-dark .sel-option.is-active { background: rgba(251, 246, 238, .09) }
-.sel-dark .sel-option[aria-selected="true"] { color: #3fd3c1 }
+.sel-dark .sel-option[aria-selected="true"] { color: #d868c7 }
 
 /* Planificador de la portada */
 .book-input .sel { flex: 1 }
@@ -40,9 +40,9 @@
 /* Formularios con campo en caja (contacto y detalle de la portada) */
 .field .sel-trigger:not(.select) { min-height: 54px; padding: 13px 18px; border: 1px solid rgba(27, 21, 17, .22); border-radius: 16px; background: #fff; color: #1b1511; font-size: 16px; transition: border-color .3s ease, box-shadow .3s ease }
 .field .sel-trigger:not(.select):hover { border-color: rgba(27, 21, 17, .4) }
-.field .sel.is-open > .sel-trigger:not(.select), .field .sel-trigger:not(.select):focus-visible, .plan-context .sel.is-open > .sel-trigger { border-color: #0c6f67; box-shadow: 0 0 0 4px rgba(12, 111, 103, .14); outline: none }
+.field .sel.is-open > .sel-trigger:not(.select), .field .sel-trigger:not(.select):focus-visible, .plan-context .sel.is-open > .sel-trigger { border-color: #742067; box-shadow: 0 0 0 4px rgba(116, 32, 103, .14); outline: none }
 .sel-trigger.select { display: flex }
-.sel.is-open > .sel-trigger.select, .sel-trigger.select:focus-visible { border-color: #0c6f67; box-shadow: 0 0 0 4px rgba(12, 111, 103, .14); outline: none }
+.sel.is-open > .sel-trigger.select, .sel-trigger.select:focus-visible { border-color: #742067; box-shadow: 0 0 0 4px rgba(116, 32, 103, .14); outline: none }
 .sel-trigger.invalid { border-color: #b0233a !important; box-shadow: 0 0 0 3px rgba(176, 35, 58, .12) }
 
 /* Orden del catálogo */

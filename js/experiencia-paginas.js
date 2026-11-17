@@ -190,7 +190,7 @@
     canvas.className = 'confetti-canvas';
     canvas.setAttribute('aria-hidden', 'true');
     const context = canvas.getContext('2d');
-    const colors = ['#0e7a71', '#3fd3c1', '#eab562', '#ffe2a1', '#ff9e45', '#fbf6ee'];
+    const colors = ['#742067', '#be3ea9', '#a56e9c', '#eab562', '#ffe2a1', '#ff9e45', '#fbf6ee'];
     const burst = () => {
       if (!context) return;
       document.body.append(canvas);

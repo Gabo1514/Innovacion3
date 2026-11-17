@@ -41,15 +41,17 @@
       document.dispatchEvent(new CustomEvent('bgv:ready'));
     };
     if (!root.classList.contains('intro') || !preloader) return;
+    const bar = $('#preloader-bar');
     const counter = $('#preloader-count');
-    const started = performance.now(), duration = 1700;
+    const started = performance.now(), duration = 1100;
     const step = now => {
       const progress = clamp((now - started) / duration);
+      if (bar) bar.style.transform = `scaleX(${progress})`;
       if (counter) counter.textContent = String(Math.round((1 - Math.pow(1 - progress, 3)) * 100)).padStart(2, '0');
       if (progress < 1) { requestAnimationFrame(step); return; }
       preloader.classList.add('is-done');
-      window.setTimeout(finish, 380);
-      window.setTimeout(() => preloader.remove(), 1200);
+      window.setTimeout(finish, 260);
+      window.setTimeout(() => preloader.remove(), 900);
     };
     requestAnimationFrame(step);
   }
